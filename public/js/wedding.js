@@ -24,7 +24,7 @@ YUI.add('le-wedding', function (Y) {
 
         stroke: {
             weight: 2,
-            color : '#f2c63d'
+            color : '#eb7d85'
         }
     });
 

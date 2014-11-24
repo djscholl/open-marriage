@@ -30,7 +30,7 @@ config = {
     },
 
     email: {
-        from: 'Leslie & Eric <rsvp@leslie-eric.us>'
+        from: 'Serina & Dan <wedding@danerina.com>'
     },
 
     dirs: {
@@ -41,7 +41,7 @@ config = {
         emails  : path.resolve('views/emails/')
     },
 
-    date: new Date('Sat Oct 5 2013 4:30:00 GMT-0400 (EDT)'),
+    date: new Date('Sat July 11 2015 4:30:00 GMT-0700 (PDT)'),
 
     version: require('../package').version,
 
