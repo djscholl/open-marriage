@@ -1,11 +1,11 @@
 {
-    "name"       : "leslie-eric.us",
+    "name"       : "danerina.com",
     "description": "The open source website for Leslie Verploegen's and Eric Ferraiuolo's wedding.",
-    "homepage"   : "http://leslie-eric.us/",
-    "version"    : "1.8.0",
+    "homepage"   : "http://danerina.com/",
+    "version"    : "2.0.0",
     "private"    : true,
 
-    "author": "Eric Ferraiuolo <eferraiuolo@gmail.com> (http://ericf.me/)",
+    "author": "Dan Scholl <daniel.scholl@gmail.com>",
 
     "license": "MIT",
 

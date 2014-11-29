@@ -41,9 +41,9 @@ app.locals({
 
     nav: [
         {id: 'wedding',   url: '/wedding/',   label: 'Wedding'},
-        {id: 'logistics', url: '/logistics/', label: 'Logistics'},
-        {id: 'registry',  url: '/registry/',  label: 'Registry'},
-        {id: 'rsvp',      url: '/rsvp/',      label: 'RSVP'}
+       {id: 'logistics', url: '/logistics/', label: 'Logistics'},
+       {id: 'registry',  url: '/registry/',  label: 'Registry'},
+//        {id: 'rsvp',      url: '/rsvp/',      label: 'RSVP'}
     ],
 
     subnav: {
