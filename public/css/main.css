@@ -122,7 +122,7 @@ button,
     *display: inline;
     zoom: 1;
     line-height: 3.0;
-    padding: 0 0.5em 0 3.5em;
+    padding: 0 0.5em 0 0.5em;
     background: #87c594;
     text-align: center;
     font-weight: 700;
@@ -261,20 +261,10 @@ a.is-button-negative {
 .subnav {
     margin: 1em 0;
 }
-.subnav .nav-item:first-child a {
-    color: #b0afa6;
-}
-.subnav .nav-item:first-child a:hover,
-.subnav .nav-item:first-child a:active {
+.subnav .nav-item a:hover,
+.subnav .nav-item a:active {
     color: #732c7b;
 }
-.subnav .nav-item:first-child b {
-    border-bottom: none;
-}
-.subnav .nav-item:first-child b:after {
-    content: ":"
-}
-
 .ann {
     font-size: 1.25em;
     line-height: 1.25;
@@ -326,7 +316,7 @@ a.is-button-negative {
         display: inline-block;
         max-height: none;
         /* Fixes Firefox's issue with `auto` */
-        width: 30em;
+        width: 40em;
     }
     .nav .nav-item {
         width: auto;

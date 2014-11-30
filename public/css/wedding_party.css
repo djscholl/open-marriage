@@ -1,0 +1,18 @@
+.vips {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 48em;
+    padding: 1em 0 3em;
+    position: relative;
+}
+
+.vips:before {
+    position: absolute;
+    z-index: -1;
+    width: 0.5em;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -0.25em;
+    background: #f2c63d;
+}

@@ -40,17 +40,22 @@ app.locals({
     yui_version: config.yui.version,
 
     nav: [
-        {id: 'wedding',   url: '/wedding/',   label: 'Wedding'},
+       {id: 'wedding', url: '/wedding/', label: 'Wedding'},
+       {id: 'wedding_party', url: '/wedding_party/', label: 'Wedding Party'},
        {id: 'logistics', url: '/logistics/', label: 'Logistics'},
-       {id: 'registry',  url: '/registry/',  label: 'Registry'},
-//        {id: 'rsvp',      url: '/rsvp/',      label: 'RSVP'}
+       {id: 'registry', url: '/registry/', label: 'Registry'},
+       // {id: 'rsvp',      url: '/rsvp/',      label: 'RSVP'}
     ],
 
     subnav: {
         logistics: [
-            {id: 'logistics', url: '/logistics/',         label: 'Logistics'},
-            {id: 'hotels',    url: '/logistics/hotels/',  label: 'Hotels'},
-            {id: 'outings',   url: '/logistics/outings/', label: 'Outings'}
+            {id: 'travel',  url: '/logistics/travel',   label: 'Travel'},
+            {id: 'hotels',  url: '/logistics/hotels/',  label: 'Hotels'},
+            {id: 'outings', url: '/logistics/outings/', label: 'Outings'}
+        ],
+        wedding_party: [
+            {id: 'bridesmaids',    url: '/wedding_party/bridesmaids/',  label: 'Bridesmaids'},
+            {id: 'groomsmen',   url: '/wedding_party/groomsmen/', label: 'Groomsmen'}
         ]
     },
 
@@ -103,9 +108,14 @@ app.get('/', routes.render('home'));
 
 app.get('/wedding/', routes.render('wedding'));
 
-app.get('/logistics/',         routes.render('logistics'));
-app.get('/logistics/hotels/',  routes.render('logistics/hotels'));
-app.get('/logistics/outings/', routes.render('logistics/outings'));
+app.get('/wedding_party/',            routes.render('wedding_party/bridesmaids'));
+app.get('/wedding_party/bridesmaids', routes.render('wedding_party/bridesmaids'));
+app.get('/wedding_party/groomsmen',   routes.render('wedding_party/groomsmen'));
+
+app.get('/logistics/',         routes.render('logistics/travel'));
+app.get('/logistics/travel',         routes.render('logistics/travel'));
+app.get('/logistics/hotels',  routes.render('logistics/hotels'));
+app.get('/logistics/outings', routes.render('logistics/outings'));
 
 app.get('/registry/', routes.render('registry'));
 
