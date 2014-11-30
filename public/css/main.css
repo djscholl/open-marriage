@@ -3,7 +3,7 @@ body {
     line-height: 1.5;
     background: #fcfcf7;
     color: #191506;
-    font-family: "proxima-nova";
+    font-family: "proxima-nova", sans-serif;
     padding-top: 3em;
     padding-bottom: 2em;
 }
@@ -168,7 +168,7 @@ a.is-button-negative {
 
 .brand {
     font-size: 1.25em;
-    font-family: "futura-pt";
+    font-family: "museo-sans-condensed", sans-serif;
     font-weight: 300;
     line-height: 2.4;
 }
@@ -299,7 +299,7 @@ a.is-button-negative {
     text-align: center;
 }
 .ann-primary {
-    font-family: "futura-pt";
+    font-family: "museo-sans-condensed", sans-serif;
     font-weight: 300;
     font-size: 2em;
     color: #732c7b;
