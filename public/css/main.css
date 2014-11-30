@@ -3,13 +3,13 @@ body {
     line-height: 1.5;
     background: #fcfcf7;
     color: #191506;
-    font-family: "proxima-nova", sans-serif;
+    font-family: "rosario", sans-serif;
     padding-top: 3em;
     padding-bottom: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "jubilat", serif;
+    font-family: "museo-sans-condensed", serif;
     font-weight: 400;
 }
 
@@ -138,21 +138,7 @@ a.button {
     color: #304534;
     text-decoration: none;
 }
-button:before,
-.button:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 2em;
-    font-weight: 400;
-    line-height: 1.5;
-    width: 1em;
-    padding: 0.125em 0.25em 0;
-    background: #75AB81;
-    text-align: center;
-}
-button:before,
-.button:before,
+
 button:after,
 .button:after {
     z-index: 0;
@@ -173,8 +159,8 @@ a.is-button-negative {
     line-height: 2.4;
 }
 .brand-sep {
-    font-family: "jubilat", serif;
-    font-weight: 400;
+    font-family: "museo-sans-condensed", serif;
+    font-weight: bold;
     margin: 0 0.15em;
 }
 .brand a {
@@ -373,7 +359,7 @@ a.is-button-negative {
 
     button,
     .button {
-        padding: 0 1em 0 4em;
+        padding: 0 1em 0 1em;
     }
 
     .brand {

@@ -42,6 +42,7 @@ config = {
     },
 
     date: new Date('Sat July 11 2015 4:30:00 GMT-0700 (PDT)'),
+    dateOver: new Date('Sat July 11 2015 11:00:00 GMT-0700 (PDT)'),
 
     version: require('../package').version,
 

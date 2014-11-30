@@ -93,8 +93,8 @@ body {
     margin-right: -2.5em;
 }
 .event-person-sep {
-    font-family: "jubilat", serif;
-    font-weight: 400;
+    font-family: "museo-sans-condensed", serif;
+    font-weight: bold;
     margin: 0 0.15em;
 }
 .event-time {
