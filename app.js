@@ -51,7 +51,6 @@ app.locals({
         logistics: [
             {id: 'travel',  url: '/logistics/travel',   label: 'Travel'},
             {id: 'hotels',  url: '/logistics/hotels/',  label: 'Hotels'},
-            {id: 'outings', url: '/logistics/outings/', label: 'Outings'}
         ],
         wedding_party: [
             {id: 'bridesmaids',    url: '/wedding_party/bridesmaids/',  label: 'Bridesmaids'},
@@ -115,7 +114,6 @@ app.get('/wedding_party/groomsmen',   routes.render('wedding_party/groomsmen'));
 app.get('/logistics/',         routes.render('logistics/travel'));
 app.get('/logistics/travel',         routes.render('logistics/travel'));
 app.get('/logistics/hotels',  routes.render('logistics/hotels'));
-app.get('/logistics/outings', routes.render('logistics/outings'));
 
 app.get('/registry/', routes.render('registry'));
 
