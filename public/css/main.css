@@ -20,7 +20,7 @@ h4 { font-size: 1em; }
 
 a:link,
 a:visited {
-    color: #732c7b;
+    color: #c22870;
     text-decoration: none;
 }
 
@@ -145,7 +145,7 @@ button:after,
 }
 .is-button-negative,
 a.is-button-negative {
-    background: #f2c63d;
+    background: #b19979;
     color: #513e06;
 }
 .is-button-negative:before {
@@ -171,7 +171,7 @@ a.is-button-negative {
 }
 .brand a:hover,
 .brand a:active {
-    color: #732c7b;
+    color: #c22870;
 }
 
 .nav-list {
@@ -198,7 +198,7 @@ a.is-button-negative {
 }
 .nav-item a:hover b,
 .nav-item a:active b {
-    border-bottom: 1px solid #732c7b;
+    border-bottom: 1px solid #c22870;
 }
 .is-nav-item-active b {
     border-bottom: 1px solid #e5e5df;
@@ -263,7 +263,7 @@ a.is-button-negative {
 }
 .subnav .nav-item a:hover,
 .subnav .nav-item a:active {
-    color: #732c7b;
+    color: #c22870;
 }
 .ann {
     font-size: 1.25em;
@@ -278,7 +278,7 @@ a.is-button-negative {
     font-family: "museo-sans-condensed", sans-serif;
     font-weight: 300;
     font-size: 2em;
-    color: #732c7b;
+    color: #c22870;
 }
 .ann-secondary {
     line-height: 1.0;
@@ -287,7 +287,7 @@ a.is-button-negative {
 
 .callout {
     padding: 0.5em 0 0.5em 2em;
-    border-left: 4px solid #f2c63d;
+    border-left: 4px solid #b19979;
 }
 
 .break {
