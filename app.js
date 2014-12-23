@@ -44,6 +44,7 @@ app.locals({
        {id: 'wedding_party', url: '/wedding_party/', label: 'Wedding Party'},
        {id: 'logistics', url: '/logistics/', label: 'Logistics'},
        {id: 'registry', url: '/registry/', label: 'Registry'},
+       {id: 'engagement', url: '/engagement/', label: 'Engagement Photos'}
        // {id: 'rsvp',      url: '/rsvp/',      label: 'RSVP'}
     ],
 
@@ -117,22 +118,24 @@ app.get('/logistics/hotels',  routes.render('logistics/hotels'));
 
 app.get('/registry/', routes.render('registry'));
 
-app.get( '/rsvp/',                       routes.rsvp.pub, routes.rsvp.edit);
-app.post('/rsvp/',                       routes.rsvp.resend);
-app.get( '/rsvp/brunch/',                routes.rsvp.brunch);
-app.post('/rsvp/brunch/',                routes.rsvp.brunch);
-app.get( '/rsvp/brunch/:invitation_key', routes.rsvp.login);
-app.get( '/rsvp/:invitation_key',        routes.rsvp.login);
+app.get('/engagement/', routes.render('engagement'));
 
-app.all( '/invitations/:invitation/*',       middleware.auth.ensureInvitation);
-app.get( '/invitations/:invitation/',        routes.invitations.read);
-app.put( '/invitations/:invitation/',        routes.invitations.update);
-app.get( '/invitations/:invitation/guests',  routes.invitations.readGuests);
-app.post('/invitations/:invitation/confirm', routes.invitations.confirm);
+// app.get( '/rsvp/',                       routes.rsvp.pub, routes.rsvp.edit);
+// app.post('/rsvp/',                       routes.rsvp.resend);
+// app.get( '/rsvp/brunch/',                routes.rsvp.brunch);
+// app.post('/rsvp/brunch/',                routes.rsvp.brunch);
+// app.get( '/rsvp/brunch/:invitation_key', routes.rsvp.login);
+// app.get( '/rsvp/:invitation_key',        routes.rsvp.login);
 
-app.all('/guests/:guest/', middleware.auth.ensureGuest);
-app.get('/guests/:guest/', routes.guests.read);
-app.put('/guests/:guest/', routes.guests.update);
+// app.all( '/invitations/:invitation/*',       middleware.auth.ensureInvitation);
+// app.get( '/invitations/:invitation/',        routes.invitations.read);
+// app.put( '/invitations/:invitation/',        routes.invitations.update);
+// app.get( '/invitations/:invitation/guests',  routes.invitations.readGuests);
+// app.post('/invitations/:invitation/confirm', routes.invitations.confirm);
+
+// app.all('/guests/:guest/', middleware.auth.ensureGuest);
+// app.get('/guests/:guest/', routes.guests.read);
+// app.put('/guests/:guest/', routes.guests.update);
 
 app.get('/combo/:version', [
     combo.combine({rootPath: config.dirs.pub}),
