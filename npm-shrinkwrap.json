@@ -1,6 +1,6 @@
 {
   "name": "danerina.com",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "dependencies": {
     "async": {
       "version": "0.2.7",
