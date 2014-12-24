@@ -229,7 +229,7 @@ a.is-button-negative {
     transition: max-height 0.2s ease-out;
 }
 .nav .is-nav-items-active {
-    max-height: 15em;
+    max-height: 35em;
 }
 .nav .nav-item {
     width: 100%;
@@ -311,7 +311,7 @@ a.is-button-negative {
 }
 
 /* 568px */
-@media screen and (min-width: 35.5em) {
+@media screen and (min-width: 70em) {
     .nav .nav-items {
         display: inline-block;
         max-height: none;
