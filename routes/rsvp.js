@@ -13,6 +13,7 @@ exports.edit   = edit;
 exports.brunch = brunch;
 
 function pub(req, res, next) {
+    console.log('pub 0')
     if (req.afterWedding) {
         delete req.session.invitation;
         return res.render('rsvp/after');
@@ -30,7 +31,6 @@ function pub(req, res, next) {
 
 function resend(req, res, next) {
     var email = req.body.email.trim();
-
     // Always redirect to "/rsvp/" after the wedding.
     if (req.afterWedding) {
         return res.redirect('/rsvp/');
