@@ -13,7 +13,6 @@ exports.edit   = edit;
 exports.brunch = brunch;
 
 function pub(req, res, next) {
-    console.log('pub 0')
     if (req.afterWedding) {
         delete req.session.invitation;
         return res.render('rsvp/after');
