@@ -38,20 +38,7 @@ YUI.add('le-rsvp', function (Y) {
     // -- Models ---------------------------------------------------------------
 
     Y.Guest = Y.Base.create('guest', Y.Model, [Y.ModelSync.REST], {
-        root: '/guests/',
-
-        mealLabel: function () {
-            var meal = '';
-
-            Y.Array.some(Y.Guest.MEALS, function (mealOption) {
-                if (mealOption.id === this.get('meal')) {
-                    meal = mealOption.label;
-                    return true;
-                }
-            }, this);
-
-            return meal;
-        }
+        root: '/guests/'
     }, {
         MEALS: YUI.Env.LE.MEALS
     });
