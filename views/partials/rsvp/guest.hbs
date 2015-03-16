@@ -20,17 +20,6 @@
                 Is Attending
             </label>
         </p>
-
-        <p class="guest-meal"><b>Main Course:</b> <span>{{guestMeal}}</span></p>
-        <p class="guest-meal-val l-grid">
-            <b class="l-grid-u-full">Main Course:</b>
-          {{#each mealOptions}}
-            <label class="l-grid-u">
-                <input type="radio" data-meal name="guest-meal-{{../id}}" value="{{id}}" {{isGuestMeal ../meal}}>
-                <span class="guest-meal-val-label">{{label}}</span>
-            </label>
-          {{/each}}
-        </p>
     </div>
 
     <div class="guest-ctrls">

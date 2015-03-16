@@ -114,7 +114,7 @@ function edit(req, res) {
         });
 
         res.locals.status = guestsNeedMeal ?
-            'Choose which Main Course you would like.' :
+            'Edit the details below if necessary.' :
             'Everything is set with your invitation response.';
 
         res.render('rsvp/attending');

@@ -110,7 +110,7 @@ YUI.add('le-rsvp', function (Y) {
     // -- Views ----------------------------------------------------------------
 
     Y.InvitationView = Y.Base.create('invitationView', Y.View, [], {
-        guestNeedsMealMsg: 'Choose which Main Course you would like.',
+        guestNeedsMealMsg: 'Edit the details below if necessary.',
         invitationDoneMsg: 'Everything is set with your invitation response.',
 
         events: {
@@ -227,7 +227,6 @@ YUI.add('le-rsvp', function (Y) {
 
                 node.one('[data-attending]').set('checked', isAttending);
 
-                node.one('.guest-meal span').set('text', guest.mealLabel());
                 node.all('[data-meal]').set('checked', false)
                     .filter('[value=' + guest.get('meal') + ']')
                         .set('checked', true);
