@@ -11,10 +11,7 @@ exports.up = function (db, callback) {
             },
 
             address      : 'text',
-            rsvp         : 'boolean',
-            send_paper   : {type: 'boolean', defaultValue: true},
-            allow_plusone: {type: 'boolean', defaultValue: false},
-            has_children : {type: 'boolean', defaultValue: false}
+            rsvp         : 'boolean'
         },
 
         ifNotExists: true
