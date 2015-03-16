@@ -28,7 +28,7 @@ function readGuests(req, res, next) {
 
 function confirm(req, res, next) {
     email.sendConfirm(req.invitation, function (err) {
-        if (err) { return next(err); }
+        if (err) { console.log(err); return next(err); }
         res.send(204);
     });
 }

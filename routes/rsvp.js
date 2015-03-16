@@ -30,7 +30,6 @@ function pub(req, res, next) {
 
 function resend(req, res, next) {
     var email = req.body.email.trim();
-
     // Always redirect to "/rsvp/" after the wedding.
     if (req.afterWedding) {
         return res.redirect('/rsvp/');
@@ -115,7 +114,7 @@ function edit(req, res) {
         });
 
         res.locals.status = guestsNeedMeal ?
-            'Choose which Main Course you would like.' :
+            'Edit the details below if necessary.' :
             'Everything is set with your invitation response.';
 
         res.render('rsvp/attending');

@@ -38,20 +38,7 @@ YUI.add('le-rsvp', function (Y) {
     // -- Models ---------------------------------------------------------------
 
     Y.Guest = Y.Base.create('guest', Y.Model, [Y.ModelSync.REST], {
-        root: '/guests/',
-
-        mealLabel: function () {
-            var meal = '';
-
-            Y.Array.some(Y.Guest.MEALS, function (mealOption) {
-                if (mealOption.id === this.get('meal')) {
-                    meal = mealOption.label;
-                    return true;
-                }
-            }, this);
-
-            return meal;
-        }
+        root: '/guests/'
     }, {
         MEALS: YUI.Env.LE.MEALS
     });
@@ -123,7 +110,7 @@ YUI.add('le-rsvp', function (Y) {
     // -- Views ----------------------------------------------------------------
 
     Y.InvitationView = Y.Base.create('invitationView', Y.View, [], {
-        guestNeedsMealMsg: 'Choose which Main Course you would like.',
+        guestNeedsMealMsg: 'Edit the details below if necessary.',
         invitationDoneMsg: 'Everything is set with your invitation response.',
 
         events: {
@@ -240,7 +227,6 @@ YUI.add('le-rsvp', function (Y) {
 
                 node.one('[data-attending]').set('checked', isAttending);
 
-                node.one('.guest-meal span').set('text', guest.mealLabel());
                 node.all('[data-meal]').set('checked', false)
                     .filter('[value=' + guest.get('meal') + ']')
                         .set('checked', true);
