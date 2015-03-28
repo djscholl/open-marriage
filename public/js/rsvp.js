@@ -110,8 +110,8 @@ YUI.add('le-rsvp', function (Y) {
     // -- Views ----------------------------------------------------------------
 
     Y.InvitationView = Y.Base.create('invitationView', Y.View, [], {
-        guestNeedsMealMsg: 'Edit the details below if necessary.',
-        invitationDoneMsg: 'Everything is set with your invitation response.',
+        rsvpNotDoneMsg: 'Edit the details below if necessary.',
+        rsvpDoneMsg: 'Thanks for RSVPing! You\'re all set.',
 
         events: {
             '[data-edit]'     : {click: 'edit'},
@@ -198,15 +198,11 @@ YUI.add('le-rsvp', function (Y) {
 
         syncUI: function () {
             var container  = this.get('container'),
-                invitation = this.get('invitation'),
-                guestsNeedsMeal;
+                invitation = this.get('invitation');
 
-            guestsNeedsMeal = invitation.get('guests').some(function (guest) {
-                return guest.get('is_attending') && !guest.get('meal');
-            });
 
-            container.one('.inv-status').set('text', guestsNeedsMeal ?
-                this.guestNeedsMealMsg : this.invitationDoneMsg);
+            container.one('.inv-status').set('text', invitation.rsvpd ?
+                this.rsvpNotDoneMsg : this.rsvpDoneMsg);
 
             container.all('address, [data-address]')
                 .setHTML(Y.Escape.html(invitation.get('address')));
