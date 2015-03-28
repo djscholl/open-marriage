@@ -8,6 +8,6 @@ YUI.add('le-main', function (Y) {
         nav.one('.nav-items').toggleClass('is-nav-items-active');
     });
 
-}, '2.2.0', {
+}, '2.2.1', {
     requires: ['node-base']
 });
