@@ -2,7 +2,7 @@
     "name"       : "danerina.com",
     "description": "The open source website for Leslie Verploegen's and Eric Ferraiuolo's wedding.",
     "homepage"   : "http://danerina.com/",
-    "version"    : "2.2.2",
+    "version"    : "2.2.3",
     "private"    : true,
 
     "author": "Dan Scholl <daniel.scholl@gmail.com>",
