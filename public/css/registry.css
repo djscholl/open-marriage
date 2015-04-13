@@ -18,7 +18,12 @@
 .donate .button {
     padding-left: 0.5em;
 }
-
+.event-photo img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 /* 576px */
 @media screen and (min-width: 36em) {
     .reg-place {

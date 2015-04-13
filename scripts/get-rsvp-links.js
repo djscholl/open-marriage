@@ -3,8 +3,6 @@
 var email = require('../lib/email'),
     invs = require('../lib/invitations');
 
-console.log('Loading invitations from database...');
-
 invs.loadInvitations(function (err, invitations) {
     if (err) {
         throw err;
