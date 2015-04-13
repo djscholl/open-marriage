@@ -185,6 +185,7 @@ YUI.add('le-rsvp', function (Y) {
                     id          : parseInt(node.getData('guest'), 10),
                     title       : node.one('[data-title]').get('value'),
                     name        : node.one('[data-name]').get('value'),
+                    email       : node.one('[data-email]').get('value'),
                     is_attending: node.one('[data-attending]').get('checked'),
                     meal        : meal
                 });

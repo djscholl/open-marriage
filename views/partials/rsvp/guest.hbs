@@ -20,6 +20,15 @@
                 Is Attending
             </label>
         </p>
+
+        <span class="guest-email-val l-grid-u">
+            <p class="guest-email-val" {{#if is_plusone}}style="display:none"{{/if}}>
+                <label>
+                    <label for="guest-email-val">Optional email address:</label><br>
+                    <input type="text" value="{{email}}" placeholder="bestfriend@email.com" data-email>
+                </label>
+            </p>
+        </span>
     </div>
 
     <div class="guest-ctrls">

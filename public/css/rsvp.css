@@ -76,6 +76,7 @@
     white-space: pre;
     margin-top: 0;
 }
+.guest-email-val label,
 .inv-address-val label {
     font-weight: 700;
 }
@@ -122,10 +123,12 @@
     width: 25%;
     padding-right: 0.5em;
 }
+.guest-email-val,
 .guest-name-val {
     width: 75%;
 }
 .guest-title-val input,
+.guest-email-val input,
 .guest-name-val input {
     width: 100%;
 }
@@ -146,6 +149,7 @@
 .guest-name-val,
 .guest-attending-val,
 .guest-meal-val,
+.guest-email-val,
 .inv-address-val,
 .inv-done {
     display: none;
@@ -167,6 +171,7 @@
 
 .is-inv-editing .guest-title-val,
 .is-inv-editing .guest-name-val,
+.is-inv-editing .guest-email-val,
 .is-inv-editing .inv-done {
     display: inline-block;
     *display: inline;
@@ -174,7 +179,8 @@
 }
 .is-inv-editing .inv-address-val,
 .is-inv-editing .guest-attending-val,
-.is-inv-editing .guest-meal-val {
+.is-inv-editing .guest-meal-val,
+.is-inv-editing .guest-email-val {
     display: block;
 }
 .is-inv-editing .inv-address,
