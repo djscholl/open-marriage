@@ -414,7 +414,7 @@ YUI.add('le-rsvp', function (Y) {
         }
     });
 
-}, '2.2.4', {
+}, '2.2.5', {
     requires: [
         'le-main',
         'app-base',

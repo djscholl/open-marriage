@@ -1,6 +1,6 @@
 {
   "name": "danerina.com",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "dependencies": {
     "async": {
       "version": "0.2.7",
@@ -308,8 +308,8 @@
           "resolved": "https://registry.npmjs.org/retry/-/retry-0.6.0.tgz"
         },
         "rimraf": {
-          "version": "2.2.4",
-          "from": "rimraf@2.2.4"
+          "version": "2.2.5",
+          "from": "rimraf@2.2.5"
         },
         "semver": {
           "version": "2.1.0",
