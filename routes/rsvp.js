@@ -78,7 +78,7 @@ function login(req, res, next) {
         invitationId = invs.decipherId(req.params.invitation_key);
     } catch (ex) {
         delete req.session.invitation;
-        return next(error(401));
+        return next(error(401, "Looks like your RSVP link wasn't quite right. Make sure you typed anything that looks like a 0 as a zero (there are no o's in the link)"));
     }
 
     invs.loadInvitation(invitationId, function (err, invitation) {
